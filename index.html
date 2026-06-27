@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="LG.png" />
+  <title>Leonardo Garc&iacute;a &mdash; UX/UI Designer & Front-End Developer</title>
+  <meta name="description" content="Portafolio de Leonardo Garc&iacute;a, Dise&ntilde;ador UX/UI Jr. y Front-End Developer especializado en convertir necesidades de negocio en interfaces claras y flujos optimizados." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CURSOR PERSONALIZADO -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">LG<span class="accent">.</span></div>
+    <ul class="nav__links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre">Sobre m&iacute;</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#proceso">Proceso</a></li>
+      <li><a href="#contacto" class="nav__cta">Contacto</a></li>
+    </ul>
+    <button class="nav__burger" id="burger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+    <div class="hero__orb hero__orb--3"></div>
+
+    <div class="parallax-layer" data-speed="0.3">
+      <div class="hero__content">
+        <p class="hero__eyebrow"><span class="dot"></span> Disponible para proyectos</p>
+        <h1 class="hero__title">
+          <span class="hero__name">Leonardo García</span>
+          <span class="hero__role" id="typewriter"></span>
+        </h1>
+        <p class="hero__subtitle">
+          Diseño interfaces que resuelven problemas reales &mdash;<br />
+          desde la investigación hasta el código.
+        </p>
+        <div class="hero__actions">
+          <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn--ghost">Hablemos</a>
+        </div>
+        <div class="hero__stats">
+          <div class="stat">
+            <span class="stat__num">3+</span>
+            <span class="stat__label">Proyectos<br/>Completados</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <span class="stat__num">End-to-end</span>
+            <span class="stat__label">UX research<br/>Hasta código</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <span class="stat__num">3+</span>
+            <span class="stat__label">Años de<br/>Ojo visual</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE Mí -->
+  <section class="about section" id="sobre">
+    <div class="about__bg-shape"></div>
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__img-wrap">
+          <div class="about__img-frame">
+            <img src="img/yo.webp" alt="Leonardo García" class="about__img" />
+          </div>
+          <div class="about__img-tag">
+            <span>CDMX &middot; 2026</span>
+          </div>
+          <div class="about__badge">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#4D8BF5"/><path d="M6 10l3 3 5-5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            UX/UI + Front-End
+          </div>
+        </div>
+
+        <div class="about__text">
+          <p class="section__eyebrow">Sobre mí</p>
+          <h2 class="section__title">Diseño que <span class="gradient-text">piensa</span> y código que <span class="gradient-text">construye</span></h2>
+          <p class="about__bio">
+            Soy diseñador UX/UI Jr. con background en fotografía y desarrollo front-end. 
+            Mi proceso combina investigación estructurada de usuarios con prototipado en Figma 
+            y entrega directa en código &mdash; sin depender de un equipo externo.
+          </p>
+          <p class="about__bio">
+            Mi formaci&oacute;n en fotografía me dio algo que no se enseña en ningún bootcamp: 
+            el ojo para el detalle visual, la composición y la narrativa. Lo aplico 
+            en cada pantalla que diseño.
+          </p>
+          <div class="about__tags">
+            <span class="tag">Investigación UX</span>
+            <span class="tag">Figma</span>
+            <span class="tag">HTML / CSS / JS</span>
+            <span class="tag">Sistemas de diseño</span>
+            <span class="tag">Fotografía</span>
+            <span class="tag">UNAM &middot; Comunicación</span>
+          </div>
+          <div class="about__links">
+            <a href="mailto:leogar.ux.ui@gmail.com" class="btn btn--primary">Enviar correo</a>
+            <a href="https://github.com/leogar-uxui/fotocapturamx" target="_blank" class="btn btn--ghost">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="projects section" id="proyectos">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">Proyectos</p>
+        <h2 class="section__title">Cases de diseño <span class="gradient-text">reales</span></h2>
+        <p class="section__desc">Cada proyecto parte de una necesidad de negocio. Aquí está el proceso completo.</p>
+      </div>
+
+      <div class="projects__grid">
+
+        <!-- PROYECTO 1 -->
+        <article class="project-card project-card--featured">
+          <div class="project-card__media">
+            <div class="project-card__mockup mockup-fotocaptura">
+              <div class="mockup__browser">
+                <div class="mockup__bar">
+                  <span></span><span></span><span></span>
+                  <div class="mockup__url">fotocaptura.mx</div>
+                </div>
+                  <div class="mockup__screen">
+                  <img src="img/fotocaptura-preview.webp"
+                  alt="Fotocaptura.mx preview"
+                  class="mockup__screenshot" />
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__overlay">
+              <a href="https://leogar-uxui.github.io/fotocapturamx/" target="_blank" class="btn btn--primary">Ver sitio live &rarr;</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <div class="project-card__meta">
+              <span class="chip">UX Research</span>
+              <span class="chip">UI Design</span>
+              <span class="chip">Front-End</span>
+            </div>
+            <h3 class="project-card__title">Fotocaptura.mx</h3>
+            <p class="project-card__desc">
+              Proceso completo end-to-end para estudio fotográfico en CDMX. 
+              Desde entrevistas con el cliente y construcción de personas, hasta 
+              rediseño de jerarquía visual orientada a impulsar paquetes de alto valor (bodas, XV años).
+            </p>
+            <ul class="project-card__results">
+              <li><span class="result-icon">&#8593;</span> Aumento en cotizaciones recibidas tras lanzamiento</li>
+              <li><span class="result-icon">+124</span> Seguidores en Instagram en menos de un mes</li>
+              <li><span class="result-icon">&#10003;</span> Entrega completa sin desarrollador externo</li>
+            </ul>
+            <div class="project-card__process">
+              <span class="process-step">Research</span>
+              <span class="process-arrow">&rarr;</span>
+              <span class="process-step">Personas</span>
+              <span class="process-arrow">&rarr;</span>
+              <span class="process-step">Wireframes</span>
+              <span class="process-arrow">&rarr;</span>
+              <span class="process-step">Figma</span>
+              <span class="process-arrow">&rarr;</span>
+              <span class="process-step">Código</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROYECTO 2 -->
+        <article class="project-card">
+          <div class="project-card__media">
+            <div class="project-card__mockup mockup-psico">
+              <div class="mockup__browser">
+                <div class="mockup__bar">
+                  <span></span><span></span><span></span>
+                  <div class="mockup__url">clínica de psicología</div>
+                </div>
+                <div class="mockup__screen">
+                  <img src="img/Captura-psic.png"
+                      alt="Fotocaptura.mx preview"
+                      class="mockup__screenshot" />
+                  </div>
+              </div>
+            </div>
+            <div class="project-card__overlay">
+              <span class="btn btn--ghost">Caso de estudio próximamente</span>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <div class="project-card__meta">
+              <span class="chip">UI Design</span>
+              <span class="chip">Front-End</span>
+              <span class="chip">Salud</span>
+            </div>
+            <h3 class="project-card__title">Clínica de Psicología</h3>
+            <p class="project-card__desc">
+              Diseño y desarrollo end-to-end para clínica de psicología. 
+              Prioridad en claridad y confianza visual para un contexto de 
+              servicios de salud, con objetivos y público ya definidos por el cliente.
+            </p>
+            <ul class="project-card__results">
+              <li><span class="result-icon">&#10003;</span> Diseño enfocado en confianza y credibilidad</li>
+              <li><span class="result-icon">&#10003;</span> Arquitectura clara de servicios y contacto</li>
+              <li><span class="result-icon">&#10003;</span> Entrega completa HTML / CSS / JS</li>
+            </ul>
+            <div class="project-card__process">
+              <span class="process-step">Brief</span>
+              <span class="process-arrow">&rarr;</span>
+              <span class="process-step">UI Design</span>
+              <span class="process-arrow">&rarr;</span>
+              <span class="process-step">Figma</span>
+              <span class="process-arrow">&rarr;</span>
+              <span class="process-step">Código</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROYECTO 3 -->
+        <article class="project-card">
+          <div class="project-card__media">
+            <div class="project-card__mockup mockup-portfolio">
+              <div class="mockup__browser">
+                <div class="mockup__bar">
+                  <span></span><span></span><span></span>
+                  <div class="mockup__url">leogar.github.io/portafolio</div>
+                </div>
+                <div class="mockup__screen">
+                    <img src="img/Captura-portf.png"
+                      alt="Fotocaptura.mx preview"
+                      class="mockup__screenshot" />
+                </div>
+              </div>
+            </div>
+            <div class="project-card__overlay">
+              <a href="https://leogar-uxui.github.io/Leonardo-Garcia-Portafolio/" target="_blank" class="btn btn--primary">Ver sitio live &rarr;</a>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <div class="project-card__meta">
+              <span class="chip">UI Design</span>
+              <span class="chip">Front-End</span>
+              <span class="chip">Fotografía</span>
+            </div>
+            <h3 class="project-card__title">Portafolio Fotográfico Personal</h3>
+            <p class="project-card__desc">
+              Sitio personal para mostrar trabajo fotográfico en motorsport, 
+              retrato, producto y eventos. Diseño visual e inmersivo enfocado 
+              en la galería y la narrativa por categoría.
+            </p>
+            <ul class="project-card__results">
+              <li><span class="result-icon">&#10003;</span> Navegación por categorías: motorsport, retrato, eventos, producto</li>
+              <li><span class="result-icon">&#10003;</span> Diseño dark, atmosférico y de alto impacto visual</li>
+              <li><span class="result-icon">&#10003;</span> Proyecto de práctica y exploración de UI</li>
+            </ul>
+            <div class="project-card__process">
+              <span class="process-step">Concepto</span>
+              <span class="process-arrow">&rarr;</span>
+              <span class="process-step">UI Design</span>
+              <span class="process-arrow">&rarr;</span>
+              <span class="process-step">Código</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section class="skills section" id="habilidades">
+    <div class="skills__bg"></div>
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">Habilidades</p>
+        <h2 class="section__title">Stack completo: <span class="gradient-text">diseño + código</span></h2>
+      </div>
+
+      <div class="skills__grid">
+
+        <div class="skills__category">
+          <h3 class="skills__cat-title">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1" y="1" width="16" height="16" rx="3" stroke="#4D8BF5" stroke-width="1.5"/><path d="M5 9h8M9 5v8" stroke="#4D8BF5" stroke-width="1.5" stroke-linecap="round"/></svg>
+            UX Design
+          </h3>
+          <div class="skill-bars">
+            <div class="skill-bar" data-level="88">
+              <div class="skill-bar__label"><span>Investigación de usuarios</span><span class="skill-bar__pct">88%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="88"></div></div>
+            </div>
+            <div class="skill-bar" data-level="85">
+              <div class="skill-bar__label"><span>User flows & wireframing</span><span class="skill-bar__pct">85%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="85"></div></div>
+            </div>
+            <div class="skill-bar" data-level="80">
+              <div class="skill-bar__label"><span>Usability testing</span><span class="skill-bar__pct">80%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="80"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills__category">
+          <h3 class="skills__cat-title">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#4D8BF5" stroke-width="1.5"/><circle cx="9" cy="9" r="3" fill="#4D8BF5"/></svg>
+            UI Design
+          </h3>
+          <div class="skill-bars">
+            <div class="skill-bar" data-level="90">
+              <div class="skill-bar__label"><span>Diseño visual & composición</span><span class="skill-bar__pct">90%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="90"></div></div>
+            </div>
+            <div class="skill-bar" data-level="85">
+              <div class="skill-bar__label"><span>Sistemas de diseño</span><span class="skill-bar__pct">85%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="85"></div></div>
+            </div>
+            <div class="skill-bar" data-level="88">
+              <div class="skill-bar__label"><span>Tipografía & color</span><span class="skill-bar__pct">88%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="88"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills__category">
+          <h3 class="skills__cat-title">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 12l4-8 4 8M6.5 9h5" stroke="#4D8BF5" stroke-width="1.5" stroke-linecap="round"/></svg>
+            Front-End
+          </h3>
+          <div class="skill-bars">
+            <div class="skill-bar" data-level="85">
+              <div class="skill-bar__label"><span>HTML & CSS</span><span class="skill-bar__pct">85%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="85"></div></div>
+            </div>
+            <div class="skill-bar" data-level="70">
+              <div class="skill-bar__label"><span>JavaScript</span><span class="skill-bar__pct">70%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="70"></div></div>
+            </div>
+            <div class="skill-bar" data-level="65">
+              <div class="skill-bar__label"><span>Python</span><span class="skill-bar__pct">65%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="65"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills__category">
+          <h3 class="skills__cat-title">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="4" width="14" height="10" rx="2" stroke="#4D8BF5" stroke-width="1.5"/><path d="M6 4V3M12 4V3" stroke="#4D8BF5" stroke-width="1.5" stroke-linecap="round"/></svg>
+            Herramientas
+          </h3>
+          <div class="tools-grid">
+            <div class="tool-chip">Figma</div>
+            <div class="tool-chip">Lunacy</div>
+            <div class="tool-chip">Photoshop</div>
+            <div class="tool-chip">Illustrator</div>
+            <div class="tool-chip">Notion</div>
+            <div class="tool-chip">GitHub</div>
+            <div class="tool-chip">VS Code</div>
+            <div class="tool-chip">Google Analytics</div>
+            <div class="tool-chip">Suit Adobe</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="process section" id="proceso">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">Proceso</p>
+        <h2 class="section__title">Cómo <span class="gradient-text">trabajo</span></h2>
+        <p class="section__desc">Un proceso estructurado que va de entender el negocio a entregar el producto.</p>
+      </div>
+
+      <div class="process__timeline">
+        <div class="process__step" data-step="01">
+          <div class="process__step-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="#4D8BF5" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="process__step-content">
+            <h3>Descubrimiento & Research</h3>
+            <p>Entrevistas con el cliente para entender el negocio, el usuario y los objetivos. Perfil de negocio, investigación en 4 ejes, personas y brief de diseño.</p>
+          </div>
+        </div>
+
+        <div class="process__connector"></div>
+
+        <div class="process__step" data-step="02">
+          <div class="process__step-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="#4D8BF5" stroke-width="1.5"/><path d="M3 9h18M9 21V9" stroke="#4D8BF5" stroke-width="1.5"/></svg>
+          </div>
+          <div class="process__step-content">
+            <h3>Arquitectura & Flujos</h3>
+            <p>Definición de la arquitectura de información y user flows enfocados en conversión. Wireframes de baja fidelidad para validar la estructura antes del diseño visual.</p>
+          </div>
+        </div>
+
+        <div class="process__connector"></div>
+
+        <div class="process__step" data-step="03">
+          <div class="process__step-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#4D8BF5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="process__step-content">
+            <h3>Diseño Visual en Figma</h3>
+            <p>Prototipo de alta fidelidad con sistema de diseño, tipografía, paleta de color e identidad visual alineada a los objetivos de negocio. Iteración con el cliente.</p>
+          </div>
+        </div>
+
+        <div class="process__connector"></div>
+
+        <div class="process__step" data-step="04">
+          <div class="process__step-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M16 18l6-6-6-6M8 6L2 12l6 6" stroke="#4D8BF5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="process__step-content">
+            <h3>Desarrollo & Entrega</h3>
+            <p>Traducción del diseño a código HTML, CSS y JavaScript. Sin depender de un desarrollador externo &mdash; lo que reduce tiempos y asegura fidelidad al diseño original.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact section" id="contacto">
+    <div class="contact__bg-orb"></div>
+    <div class="container">
+      <div class="contact__inner">
+        <div class="contact__text">
+          <p class="section__eyebrow">Contacto</p>
+          <h2 class="section__title">¿Tienes un <span class="gradient-text">proyecto</span>?</h2>
+          <p class="contact__desc">
+            Estoy disponible para proyectos freelance y oportunidades de trabajo. 
+            Cuéntame sobre tu proyecto y encontramos la mejor forma de colaborar.
+          </p>
+          <div class="contact__links">
+            <a href="mailto:leogar.ux.ui@gmail.com" class="contact__link">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2 4h16v12H2V4zm0 0l8 7 8-7" stroke="#4D8BF5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              leogar.ux.ui@gmail.com
+            </a>
+            <a href="https://wa.me/525547328935?text=Hola%20Leonardo%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20platicar%20sobre%20un%20proyecto" target="_blank" class="contact__link">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 1.5A8.5 8.5 0 0 0 2.1 13.4L1.5 18.5l5.2-.6A8.5 8.5 0 1 0 10 1.5zm0 15.4a6.9 6.9 0 0 1-3.6-1l-.3-.2-3.1.4.4-3-.2-.3A6.9 6.9 0 1 1 10 16.9zm3.8-5.1c-.2-.1-1.2-.6-1.4-.7-.2-.1-.3-.1-.5.1-.1.2-.5.7-.7.8-.1.1-.3.1-.5 0a5.5 5.5 0 0 1-1.6-1 6 6 0 0 1-1.1-1.4c-.1-.2 0-.4.1-.5l.4-.4.2-.4v-.4L7.9 6.9c-.2-.4-.4-.4-.5-.4h-.4c-.2 0-.4.1-.6.3A2.6 2.6 0 0 0 5.6 9c.1.7.5 1.5 1 2.1a9.2 9.2 0 0 0 3.6 3.1c.5.2.9.3 1.2.4.5.1 1 .1 1.3 0 .4-.1 1.2-.5 1.4-1 .2-.4.2-.8.1-1l-.4-.3z" fill="#4D8BF5"/></svg>
+              +52 55 47 32 89 35 (WhatsApp)
+            </a>
+            <a href="https://www.instagram.com/leogar.20" target="_blank" class="contact__link">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="2" width="16" height="16" rx="5" stroke="#4D8BF5" stroke-width="1.4"/><circle cx="10" cy="10" r="3.5" stroke="#4D8BF5" stroke-width="1.4"/><circle cx="14.5" cy="5.5" r="1" fill="#4D8BF5"/></svg>
+              @leogar.20
+            </a>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contactForm">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo</label>
+            <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cu&eacute;ntame sobre tu proyecto..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <span>Enviar mensaje</span>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 9h14M9 2l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="form-note">También puedes escribirme directo por WhatsApp o correo.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__logo">LG<span class="accent">.</span></div>
+        <p class="footer__copy">&copy; 2026 Leonardo García &middot; Diseñador UX/UI & Front-End &middot; CDMX</p>
+        <div class="footer__socials">
+          <a href="https://github.com/leogar-uxui" target="_blank" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2C5.58 2 2 5.58 2 10c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0018 10c0-4.42-3.58-8-8-8z" fill="currentColor"/></svg>
+          </a>
+          <a href="https://www.instagram.com/leogar.20" target="_blank" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="2" width="16" height="16" rx="5" stroke="currentColor" stroke-width="1.4"/><circle cx="10" cy="10" r="3.5" stroke="currentColor" stroke-width="1.4"/><circle cx="14.5" cy="5.5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="mailto:leogar.ux.ui@gmail.com" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2 5h16v10H2V5zm0 0l8 6 8-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
