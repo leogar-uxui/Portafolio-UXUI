@@ -141,17 +141,40 @@ document.addEventListener('mousemove', e => {
 /* ---- CONTACT FORM ---- */
 const form = document.getElementById('contactForm');
 if (form) {
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async function(e) {
     e.preventDefault();
+
     const btn = form.querySelector('.btn--primary');
-    const original = btn.innerHTML;
-    btn.innerHTML = '<span>¡Enviado!</span> ✓';
-    btn.style.background = 'linear-gradient(135deg, #27C93F, #1a9e2e)';
-    setTimeout(() => {
-      btn.innerHTML = original;
-      btn.style.background = '';
-      form.reset();
-    }, 3000);
+    const span = btn.querySelector('span');
+    const action = form.getAttribute('action');
+
+    span.textContent = 'Enviando...';
+    btn.disabled = true;
+
+    try {
+      const response = await fetch(action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        span.textContent = '¡Enviado!';
+        btn.style.background = 'linear-gradient(135deg, #27C93F, #1a9e2e)';
+        form.reset();
+        setTimeout(() => {
+          span.textContent = 'Enviar mensaje';
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 4000);
+      } else {
+        span.textContent = 'Error, intenta de nuevo';
+        btn.disabled = false;
+      }
+    } catch {
+      span.textContent = 'Error de conexi&oacute;n';
+      btn.disabled = false;
+    }
   });
 }
 
